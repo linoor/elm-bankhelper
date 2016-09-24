@@ -3,3 +3,34 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 // can add Boostrap overrides, additional Sass/CSS below...
+
+//listStyle  = style [ ("diplay", "inline"), ("float", "left"), ("list-style-type", "none") ]
+
+body {
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 100px
+}
+
+.fields {
+  display: inline;
+  float: left;
+  list-style-type: none;
+
+  .field {
+    width: 30px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background: white;
+    -webkit-user-select: none;
+
+    .pressed {
+      background: black;
+    }
+  }
+}
+// ("float", "right"), ("margin-right", "100px") ]
+.unselect {
+}
