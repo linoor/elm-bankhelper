@@ -8,7 +8,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 body {
     margin: 0 auto;
-    width: 800px;
+    width: 80%;
     margin-top: 100px
 }
 
@@ -26,11 +26,13 @@ body {
     background: white;
     -webkit-user-select: none;
 
-    .pressed {
-      background: black;
-    }
+  }
+
+  .pressed {
+    background: black;
   }
 }
 // ("float", "right"), ("margin-right", "100px") ]
 .unselect {
+  margin-left: 50px;
 }

@@ -47,7 +47,7 @@ view model =
       letter fieldId  = li
                     [ class "fields" ]
                     [ input
-                        [class "field",
+                        [class (if contains fieldId then "field pressed" else "field"),
                          value (getNthPassLetter fieldId),
                          readonly True,
                          onClick (Swap fieldId)
@@ -71,7 +71,9 @@ view model =
 
   in div
         []
-        [ List.map letter [1..(String.length pass)] |> ul [class "fields"]
+        [ div
+            []
+            [ List.map letter [1..(String.length pass)] |> ul [class "fields"] ]
         , div
           []
           [ button [ onClick Unselect, class "unselect" ] [ text "unselect all" ]
